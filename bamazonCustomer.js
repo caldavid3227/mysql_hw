@@ -1,7 +1,14 @@
-var inquirer = require('inquirer');
+const inquirer = require('inquirer');
 
-input {
+const questions = [{
 	type: 'input',
 	name: 'id',
 	message: 'What item(s) are you looking to buy?'
-}
+}, {
+	type: 'input',
+	name: 'id',
+	message: 'How many would you like?'
+}];
+
+inquirer.prompt(questions);
+
